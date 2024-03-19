@@ -12,8 +12,10 @@ fst{
     font-size: 15px;
 }
 snd{
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bolder;
+    letter-spacing: -7px;
+    line-height: 55px;
 }
 thd{
     font-size: 20px;
@@ -138,7 +140,7 @@ thd{
 button{
     background-color: black;
     width: 70px;
-    height: 40px;
+    height: 35px;
     border-radius: 30px;
     color: white;
     font-size: 15px;
@@ -151,6 +153,7 @@ button{
     user-select: none;
     overflow: hidden;
     position: relative;
+    border: none;
 }
 
 button:hover{
@@ -160,8 +163,6 @@ button:hover{
 button:after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 5px;
   height: 5px;
   background: rgba(255, 255, 255, .5);
