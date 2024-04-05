@@ -17,9 +17,10 @@ snd{
     letter-spacing: -7px;
     line-height: 55px;
 }
-thd{
+.thd{
     font-size: 20px;
     font-weight: 100;
+    margin-top: 20px;
 }
 
 .apanel__header{
@@ -73,8 +74,11 @@ thd{
 }
 
 .gif__main{
-    height: 850px;
+    height: 550px;
     background: white;
+    background-image: url(../images/main-page/nike-just-do-it.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .newshoe__main{
@@ -86,7 +90,7 @@ thd{
 }
 
 .newshoe__carusel{
-    padding: 25px 40px;
+    padding: 0px 40px;
     width: 100%; 
     overflow-x: auto; 
     white-space: nowrap;
@@ -131,13 +135,22 @@ thd{
 }
 
 
-.left__shoe-carusel{
-    padding-left: 50px;
+.left__shoe-carusel{  
     font-size: 25px;
     font-weight: 100;
+    text-align: end;
 }
 
-button{
+.carusel-cont{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+div.button__shop-cont button{
     background-color: black;
     width: 70px;
     height: 35px;
@@ -156,11 +169,7 @@ button{
     border: none;
 }
 
-button:hover{
-    background-color: #707072;
-}
-
-button:after {
+div.button__shop-cont button:after {
   content: '';
   position: absolute;
   width: 5px;
@@ -189,4 +198,16 @@ button:after {
 
 button:focus:not(:active)::after {
   animation: ripple 1s ease-out;
+}
+
+.prev-button, .next-button {
+  height: 50px;
+  width: 50px;
+  background-color: #E5E5E5;
+  border: 0px;
+  border-radius: 100%;
+}
+.prev-button:hover, .next-button:hover {
+  background-color: #cacaca;
+  transition: .2s;
 }
