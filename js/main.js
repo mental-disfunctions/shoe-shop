@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   }
 });
+
+
+var o = document.getElementById("ad-detect");
+var ad_visible = o && (o.style.display != 'none') && (o.width * o.height)
