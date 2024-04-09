@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-var o = document.getElementById("ad-detect");
-var ad_visible = o && (o.style.display != 'none') && (o.width * o.height)
+var ad_detector = document.getElementById("ad?");
+var ad_joke = ad_detector && (ad_detector.style.display != 'none') && (ad_detector.width * ad_detector.height)
